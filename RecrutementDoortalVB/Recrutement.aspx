@@ -23,7 +23,7 @@
         <div id="ajaxResult" class="message-box ajax-msg" hidden></div>
         <div id="dbResult" class="message-box db-msg" hidden></div>
 
-        <form method="post" action="Recrutement.aspx">
+        <form id="form1" method="post" runat="server">
             <div class="actions">
                 <button type="submit" name="action" value="recruterAvecPlaisir" class="pill bluePill">
                     Test du Postback
