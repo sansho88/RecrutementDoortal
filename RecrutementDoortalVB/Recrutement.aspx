@@ -1,13 +1,13 @@
-﻿<%@ Page Language="VB" AutoEventWireup="false" CodeBehind="Recrutement.aspx.vb" Inherits="RecrutementDoortalVB.Recrutement" %>
+﻿<%@ Page Language="VB" AutoEventWireup="false" CodeBehind="Recrutement.aspx.vb" Inherits="RecrutementDoortalVB.Recrutement" EnableSessionState="False" %>
 
 <!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="utf-8" />
-    <title>Recrutement VB</title>
+    <title>Recrutement</title>
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; object-src 'none';">
     
-    <link rel="stylesheet" href="styles.css?v=1.1" />
+    <link rel="stylesheet" href="styles.css?v=1.2" />
 </head>
 <body>
 
@@ -21,6 +21,7 @@
         <% End If %>
 
         <div id="ajaxResult" class="message-box ajax-msg" hidden></div>
+        <div id="dbResult" class="message-box db-msg" hidden></div>
 
         <form method="post" action="Recrutement.aspx">
             <div class="actions">
@@ -31,11 +32,15 @@
                 <button type="button" id="btnAjax" class="pill redPill">
                     Test Ajax
                 </button>
+
+                <button type="button" id="btnDatabase" class="pill greenPill" hidden>
+                    Astuce du jour
+                </button>
             </div>
         </form>
     </div>
 
-    <script src="app.js"></script>
+    <script src="app.js?v=1.3"></script>
 </body>
 </html>
 
