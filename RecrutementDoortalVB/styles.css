@@ -1,0 +1,74 @@
+﻿body {
+    font-family: sans-serif;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    border: 3px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.actions {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 14px;
+    color: antiquewhite;
+}
+
+.pill{
+    border: 0;
+    border-radius:24px;
+    position: relative;
+    overflow: hidden;
+}
+
+.bluePill {
+
+    background: linear-gradient(135deg, #4da3ff 0%, #007bff 50%, #0056b3 100%);
+    box-shadow: -1px 4px 8px 0 rgba(0, 0, 128, 0.42);
+
+}
+
+.redPill {
+    background: linear-gradient(135deg, #ff4d4d 0%, #ff0000 50%, #b30000 100%);
+    box-shadow: 2px 4px 8px 0 rgba(128, 0, 0, 0.42);
+}
+
+.bluePill::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 8px;
+    right: 8px;
+    height: 40%;
+    border-radius: 999px;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.6), transparent);
+    pointer-events: none;
+}
+
+.message-box {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.server-msg {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.ajax-msg {
+    background-color: #cce5ff;
+    color: #004085;
+    border: 1px solid #b8daff;
+}
